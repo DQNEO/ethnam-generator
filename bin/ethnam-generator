@@ -11,4 +11,4 @@ fi
 # vendor/bin
 THIS_DIR=$(cd $(dirname $0); pwd)
 
-php -d error_reporting=E_ALL -qC $THIS_DIR/ethnam-generator.php $*
+php -d error_reporting=E_ALL $THIS_DIR/ethnam-generator.php $*
