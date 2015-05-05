@@ -12,6 +12,3 @@ fi
 THIS_DIR=$(cd $(dirname $0); pwd)
 
 php -d html_errors=off -d error_reporting="E_ALL & ~E_DEPRECATED" -qC $THIS_DIR/ethnam-generator.php $*
-
-
-
