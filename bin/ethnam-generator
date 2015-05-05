@@ -1,14 +1,18 @@
-#!/bin/sh
-#
-#   ethna command
-#
+#!/usr/bin/env php
+<?php
+/**
+ *  Ethna Command
+ *
+ */
+use Ethnam\Generator\Command;
+$binDir = __DIR__; // 'ethnam-generator/bin'
 
-if [ "$1" = "--debug" ]; then
-    set -x
-    shift
-fi
+error_reporting(E_ALL);
 
-# vendor/bin
-THIS_DIR=$(cd $(dirname $0); pwd)
+//require_once  $binDir . '/../autoload.php';
 
-php -d error_reporting=E_ALL $THIS_DIR/ethnam-generator.php $*
+// 'vendor/autoload.php';
+require_once  $binDir . '/../../../autoload.php';
+
+$handle = new Command;
+$handle->run();
