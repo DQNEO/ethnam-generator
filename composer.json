@@ -19,6 +19,7 @@
     "psr-4": { "Ethnam\\Generator\\" : "src/" }
   },
   "bin" : [
-    "bin/ethnam-generator"
+    "bin/ethnam-generator",
+    "bin/ethnam-generator.php"
   ]
 }
