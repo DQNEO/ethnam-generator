@@ -7,13 +7,21 @@
 use Ethnam\Generator\Command;
 
 error_reporting(E_ALL);
-$binDir = __DIR__; // 'ethnam-generator/bin'
 
+$binDir = __DIR__; // 'ethnam-generator/bin' or 'vendor/bin'
 
-//require_once  $binDir . '/../autoload.php';
+if (basename(dirname($binDir)) === 'vendor') {
+    $vendorDir = dirname($binDir);
+} else if (basename($binDir . '/../vendor') === 'vendor') {
+    $vendorDir = $binDir . '/../vendor';
+} else {
+    throw new \Exception('vendir dir not found');
+}
 
 // 'vendor/autoload.php';
-require_once  $binDir . '/../../../autoload.php';
+require_once  $vendorDir . '/autoload.php';
 
 $handle = new Command;
-$handle->run();
+$statu = $handle->run();
+
+exit($statu);
