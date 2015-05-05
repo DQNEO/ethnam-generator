@@ -13,7 +13,7 @@ $binDir = __DIR__; // 'project/bin' or 'vendor/ethnam/generator/bin'
 if (basename(dirname($binDir)) === 'vendor') {
     $vendorDir = dirname($binDir);
 } else {
-    $vendorDir = dirname(dirnamea(dirname($binDir)));
+    $vendorDir = dirname(dirname(dirname($binDir)));
     if (basename($vendorDir) !== 'vendor') {
         throw new \Exception('vendir dir not found');
     }
