@@ -9,6 +9,7 @@
         { "name": "DQNEO", "role" : "Administrator"}
     ],
   "require": {
+    "ethnam/getopt" : "1.*",
     "php" : ">=5.4.0"
   },
   "require-dev" : {

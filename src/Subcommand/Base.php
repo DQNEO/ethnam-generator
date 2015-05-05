@@ -6,7 +6,7 @@
  */
 namespace Ethnam\Generator\Subcommand;
 
-use \Ethnam\Generator\Getopt;
+use \Ethnam\Getopt\Getopt;
 use \Ethnam\Generator\Command as Ethna_Command;
 
 /**

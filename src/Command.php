@@ -12,6 +12,7 @@ namespace Ethnam\Generator;
  *  @author     Masaki Fujimoto <fujimoto@php.net>
  *  @access     public
  */
+use Ethnam\Getopt\Getopt;
 use \Ethna_Controller;
 use \Ethna_Util;
 use \Ethna;
