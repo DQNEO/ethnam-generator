@@ -7,6 +7,7 @@
 use Ethnam\Generator\Command;
 $binDir = __DIR__; // 'ethnam-generator/bin'
 
+error_reporting(E_ALL);
 
 //require_once  $binDir . '/../autoload.php';
 
