@@ -5,9 +5,10 @@
  *
  */
 use Ethnam\Generator\Command;
-$binDir = __DIR__; // 'ethnam-generator/bin'
 
 error_reporting(E_ALL);
+$binDir = __DIR__; // 'ethnam-generator/bin'
+
 
 //require_once  $binDir . '/../autoload.php';
 
