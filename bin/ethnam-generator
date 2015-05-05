@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /**
- *  Ethna Command
+ *  Ethnam Generator Command
  *
  */
 use Ethnam\Generator\Command;
