@@ -8,14 +8,15 @@ use Ethnam\Generator\Command;
 
 error_reporting(E_ALL);
 
-$binDir = __DIR__; // 'ethnam-generator/bin' or 'vendor/bin'
+$binDir = __DIR__; // 'project/bin' or 'vendor/ethnam/generator/bin'
 
 if (basename(dirname($binDir)) === 'vendor') {
     $vendorDir = dirname($binDir);
-} else if (basename($binDir . '/../vendor') === 'vendor') {
-    $vendorDir = $binDir . '/../vendor';
 } else {
-    throw new \Exception('vendir dir not found');
+    $vendorDir = dirname(dirnamea(dirname($binDir)));
+    if (basename($vendorDir) !== 'vendor') {
+        throw new \Exception('vendir dir not found');
+    }
 }
 
 // 'vendor/autoload.php';
