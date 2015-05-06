@@ -139,7 +139,7 @@ class Project extends Base
         $macro = array_merge($macro, $user_macro);
 
         //  select locale file.
-        $locale_file = (file_exists(ETHNA_BASE . "/skel/locale/$locale/ethna_sysmsg.ini"))
+        $locale_file = $this->_resolveSkelfile("locale/$locale/ethna_sysmsg.ini")
                      ? "locale/$locale/ethna_sysmsg.ini"
                      : 'locale/ethna_sysmsg.default.ini';
 
