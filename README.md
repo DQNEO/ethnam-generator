@@ -386,9 +386,11 @@ Ethna 2.3.5 以降では、作成したテストはデフォルトで失敗す�
 
 ethna で指定できる各コマンドは Ethna_Plugin_Handle_\* プラグインで作られています。プラグインはアプリケーション固有のものもありますが、現在のところ ethna コマンド用 のプラグインはEthna本体のものしか使えません。
 
-### Ethna_Handle について
+### Ethnam\Generatorの実装について
 
-Ethna_Handleはコントローラから独立したクラスです。ethnaコマンドが実行されてまずインスタンスが作られます。Ethna_Handleのコンストラクタ内でようやくEthna_Controllerのインスタンスが作られます。
+Ethnam\Generator はEthnam本体からは独立したパッケージです。
+
+ethnam-generatorコマンド内でEthna_Controllerのインスタンスが作られます。
 
 Ethna本体のディレクトリやアプリケーションのディレクトリに何か指示をするときは、いったん以下のメソッドで各コントローラを取得し、$ctl->getDirectory('tmp')とかするといいと思います。
 
