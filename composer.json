@@ -17,8 +17,5 @@
   },
   "autoload": {
     "psr-4": { "Ethnam\\Generator\\" : "src/" }
-  },
-  "bin" : [
-    "bin/ethnam-generator"
-  ]
+  }
 }
