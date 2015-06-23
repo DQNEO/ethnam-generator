@@ -4,7 +4,7 @@
   "type": "library",
   "license": "BSD-4-Clause",
   "keywords": [ "framework", "ethnam" ],
-  "homepage": "https://github.com/DQNEO/ethnam-generator",
+  "homepage": "https://github.com/ethnamphp/ethnam-generator",
   "authors": [
         { "name": "DQNEO", "role" : "Administrator"}
     ],
